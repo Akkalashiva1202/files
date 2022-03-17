@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="id1" class="myc"  style="background-color: red;" title="dom">paragraph</p>
+    <script>
+        console.log(document.getElementById("id1").title);
+        //STYLE PROPERTY
+        var p=document.getElementById("id1");
+        p.style.backgroundColor="grey";
+        p.style.fontSize="100px";
+        console.log(p);
+        document.getElementById("id1").style.fontStyle="italic";
+        console.log(p.style);
+        var bg=document.getElementById("id1").style.backgroundColor;
+        var b=p.style.backgroundColor;
+        console.log("color:",bg,p);
+        p.setAttribute("style","font-size:200px");
+    </script>
+</body>
+</html>
